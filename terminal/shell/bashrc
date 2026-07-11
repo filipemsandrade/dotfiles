@@ -116,7 +116,6 @@ plugins=(
   nvm
   pyenv
   sudo
-  tmux
 )
 
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.oh-my-bash/plugins/*)
@@ -160,16 +159,10 @@ source "$OSH"/oh-my-bash.sh
 # For a full list of active aliases, run `alias`.
 
 # aliases
-alias vim="nvim"
-alias vi="nvim"
 alias cls="clear"
-#alias ec='emacsclient -n -s main -c'
-alias ec='emacsclient -n -c'
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
-# add doom emacs to path
-export PATH="$HOME/.config/emacs/bin:$PATH"
